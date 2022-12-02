@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./linnex-college-utawala.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="portal.css">
+    <title>Reset Password</title>
+</head>
+<style>
+    #thanks-section {
+
+        background-color: #4854613b;
+        background-image: linear-gradient(315deg, #48546194 0%, #28313bee 74%);
+        width: max-content;
+        margin: auto;
+        padding: 20px;
+        margin-top: 50px;
+        font-weight: bolder;
+        font-size: larger;
+        border: 0;
+        box-shadow: 3px 3px 3px 3px #485461;
+        border-radius: 2px;
+        color: white;
+    }
+</style>
+
+<body>
+    <div id="top-nav-icon" style="display: flex;">
+        <p id="nav-menu-bar"><a href="#" id="nav-menu-link"><i class="bi bi-list" style="color:black;"></i></a></p>
+        <h3 style=" margin: auto; color: white;">Linnex Training Institute Utawala</h3>
+        <h6><a href="/home" style="color: yellow; text-decoration: none; padding-right: 3px;">Back to Site</a></h6>
+    </div>
+    <div id="side-nav">
+        <div id="logo">
+            <img src="./linnex-college-utawala.jpg">
+        </div>
+        <nav id="side-nav-nav">
+            <p id="nav-home" class="nav-link"><a href="/homeportal" class="nav-link-btn">Home</a></p>
+            <p id="nav-Ebook" class="nav-link"><a href="#" class="nav-link-btn">E-Library</a></p>
+            <p id="nav-Fees" class="nav-link"><a href="#" class="nav-link-btn">Check Fees</a></p>
+            <p id="nav-profile" class="nav-link"><a href="/changeprofile" class="nav-link-btn">Change Profile</a></p>
+            <p id="nav-profile" class="nav-link"><a href="/changepassword" class="nav-link-btn">Change Password</a></p>
+        </nav>
+    </div>
+    <div id="thanks-section">
+        <p><%=suxChangePwd%></p>
+
+    </div>
+
+    <script>
+
+        const navMenu = document.getElementById("nav-menu-link");
+        const sideNav = document.getElementById("side-nav");
+
+        document.addEventListener('click', () => {
+            var isClickSideNavElement = sideNav.contains(event.target);
+            var isClickInsideNavMenu = navMenu.contains(event.target);
+            if (!isClickSideNavElement) {
+                if (isClickInsideNavMenu) {
+                    if (sideNav.innerHTML === ``) {
+                        sideNav.innerHTML = `<div id="logo">
+            <img src="./linnex-college-utawala.jpg">
+        </div>
+        <nav id="side-nav-nav">
+            <p id="nav-home" class="nav-link"><a href="/homeportal" class="nav-link-btn">Home</a></p>
+            <p id="nav-Ebook" class="nav-link"><a href="#" class="nav-link-btn">Ebook</a></p>
+            <p id="nav-Fees" class="nav-link"><a href="#" class="nav-link-btn">Check Fees</a></p>
+            <p id="nav-profile" class="nav-link"><a href="#" class="nav-link-btn">Change Profile</a></p>
+            <p id="nav-profile" class="nav-link"><a href="/changepassword" class="nav-link-btn">Change Password</a></p>
+
+        </nav>`
+                    }
+                    else {
+                        sideNav.innerHTML = ``
+                    }
+                }
+                else {
+                    sideNav.innerHTML = ``
+                }
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

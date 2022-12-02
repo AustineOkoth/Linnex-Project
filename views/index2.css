@@ -1,0 +1,303 @@
+html{
+    background-color: whitesmoke;
+}
+
+/* top nav CSS */
+
+#top-nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-top: -8px;
+
+    
+}
+#navname-navdetails{
+    display: flex;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navdetails{
+    display: flex;
+
+}
+
+#navname{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+}
+
+.nav-nav-link{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 50;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-nav-header{
+    color: white;
+}
+
+.nav-nav-header:hover{
+    color: rgb(255, 255, 27);
+}
+
+
+
+/* end of top nav css */
+
+
+#body-container{
+    overflow-x: hidden;
+}
+#body-container-2{
+    width: 80%;
+    margin: auto;
+    overflow-x: hidden;
+
+}
+
+#body-container-courses{
+    width: 80%;
+    margin: auto;
+}
+
+#title-logo-location-accredited{
+background-image: url(./graduate-image2.jpg);
+opacity: 0.8;
+background-repeat:repeat;
+margin-top: -20px;
+width: 100%;
+}
+
+#title-header{
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 70px;
+}
+
+#logo-location{
+    display: flex;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+#location-header,#location-para{
+    margin-left: 15px;
+}
+
+
+p,h3,h1{
+    font-family: sans-serif;
+}
+
+#title,#logo-location,#accredited{
+    margin-left: 30px;
+}
+
+
+/* Social handles CSS */
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+.social-class{
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.692);
+}
+
+.social-icon-allcourses{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a:hover{
+    color: rgba(116, 116, 17, 0.822);
+}
+#social-handles{
+    margin-top: 20px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.397);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  
+}
+#facebook,#phone-call,#contact-email,#instagram,#linkedin{
+    margin: auto;
+    padding: 20px;
+}
+
+#facebook:hover,#phone-call:hover,#contact-email:hover,#instagram:hover,#linkedin:hover{
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out; 
+}
+
+
+
+/*About Section CSS */
+
+#about-linnex{
+    background-color: white;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.397);
+}
+
+#about-para,#mission-para,#vision-para,#values{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* Why STUDY Section */
+
+#why-study{
+    background-color: white;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.397);
+
+}
+/* #why-study-adm-require{
+    background-image: url(./art-g817d32106_1920.jpg);
+
+} */
+
+/* Requirement join css */
+
+#adm-require{
+    background-color: white;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.397);
+
+}
+
+/* courses offered CSS */
+#courses-offered-category{
+    background-color: white;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.397);
+
+}
+.course{
+    width: 400px;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.397);
+
+}
+.course-name-class{
+    font-family: sans-serif;
+    font-size: smaller;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+#drop-down-div{
+    background-color: rgba(0, 0, 0, 0.753);
+    position: absolute;
+}
+
+.drop-down-link-class{
+    color: yellow;
+    padding:15px;
+}
+
+.drop-down-link-class:hover{
+color: white;
+}
+
+#diploma-period{
+    display: flex;
+    
+}
+#period-id,#diploma-id{
+    margin: auto;
+}
+#details-apply{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.course-details,.course-apply{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.department-rows{
+    display: flex;
+}
+
+#footer{
+   /* // background-color:rgba(0, 0, 0, 0.925); */
+    height:50px;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    width: 100%;
+    bottom:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+.department-rows{
+    display: block;
+}
+
+#body-container-courses{
+    width: 90%;
+    margin: auto;
+}
+
+#top-nav{
+    visibility: visible;
+    max-width: 500px;
+}
+
+.nav-nav-link{
+    padding-left: 0px;
+    padding-right:0px
+
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+    #body-container-2{
+        width: 100%;
+    margin: auto;
+
+}}

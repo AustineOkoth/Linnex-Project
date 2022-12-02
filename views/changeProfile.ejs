@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./linnex-college-utawala.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="portal.css">
+    <title>Change Profile linnex Training Institute Utawala</title>
+</head>
+<style>
+    #change-profile {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .change-profile-inputs {
+        padding: 10px;
+        margin: 10px;
+        border: 0;
+        width: 200px;
+    }
+
+    #form-change-profile {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .sec-1 {
+        display: flex;
+        margin: auto;
+    }
+
+    #sec-all {
+        width: max-content;
+        margin: auto;
+    }
+
+    #change-profile-top-section{
+        background-color:whitesmoke;
+        border-radius: 10px;
+    }
+
+    .top-sec{
+        text-align: left;
+        padding-left: 30px;
+        padding-top: 5px;
+    }
+
+
+
+    @media only screen and (max-width: 768px) {
+        .sec-1 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 350px) {
+        .change-profile-inputs {
+            width: 150px;
+        }
+    }
+
+
+    @media only screen and (max-width: 280px) {
+        .change-profile-inputs {
+            width: 150px;
+        }
+    }
+</style>
+
+<body>
+    <div id="top-nav-icon" style="display: flex;">
+        <p id="nav-menu-bar"><a href="#" id="nav-menu-link"><i class="bi bi-list" style="color:black;"></i></a></p>
+        <h3 style=" margin: auto; color: white;">Linnex Training Institute Utawala</h3>
+        <h6><a href="/home" style="color: yellow; text-decoration: none; padding-right: 3px;">Back to Site</a></h6>
+    </div>
+    <div id="side-nav">
+        <div id="logo">
+            <img src="./linnex-college-utawala.jpg">
+        </div>
+        <nav id="side-nav-nav">
+            <p id="nav-home" class="nav-link"><a href="/homeportal" class="nav-link-btn">Home</a></p>
+            <p id="nav-Ebook" class="nav-link"><a href="#" class="nav-link-btn">E-Library</a></p>
+            <p id="nav-Fees" class="nav-link"><a href="#" class="nav-link-btn">Check Fees</a></p>
+            <p id="nav-profile" class="nav-link"><a href="/changeprofile" class="nav-link-btn">Change Profile</a></p>
+            <p id="nav-profile" class="nav-link"><a href="/changepassword" class="nav-link-btn">Change Password</a></p>
+        </nav>
+    </div>
+    <div id="change-profile">
+        <div id="change-profile-top-section">
+
+            <p class="top-sec">Reg No: <b> <%=RegistrationNumber %></b></p>
+            <p class="top-sec">Name: <b> <%=UserName%></b></p>
+            <p class="top-sec">Course: <b> <%=UserCourse%> </b></p>
+
+        </div>
+        <form id="form-change-profile" method="post" action="/changeprofile">
+            <div id="sec-all">
+
+                <div class="sec-1">
+                    <input type="email" class="change-profile-inputs" name="changeProfileInputsemail"
+                        placeholder="Change Email"><br>
+                        
+                    <input type="date" class="change-profile-inputs" name="changeProfileInputsdate"
+                        placeholder="Date of Birth"><br>
+                </div>
+                <div class="sec-1">
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputsgender"
+                        placeholder="Gender"><br>
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputsphone"
+                        placeholder="Phone Number"><br>
+
+                </div>
+                <div class="sec-1">
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputscountry"
+                        placeholder="Country"><br>
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputshome"
+                        placeholder="Home Address"><br>
+
+                </div>
+                <div class="sec-1">
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputsmarital"
+                        placeholder="Marital"><br>
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputsreligion"
+                        placeholder="Religion"><br>
+
+                </div>
+                <div class="sec-1">
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputsdisability"
+                        placeholder="Disability"><br>
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputsoccupation"
+                        placeholder="Occupation"><br>
+
+                </div>
+                <div class="sec-1">
+                    <input type="text" class="change-profile-inputs" name="changeProfileInputslanguage"
+                        placeholder="Language"><br>
+                </div>
+
+            </div>
+
+            <input type="submit" value="SUMBIT" style="padding: 10px; margin: 20px;"><br>
+
+
+
+
+        </form>
+    </div><br><br>
+
+
+
+    <script>
+
+        const navMenu = document.getElementById("nav-menu-link");
+        const sideNav = document.getElementById("side-nav");
+
+        document.addEventListener('click', () => {
+            var isClickSideNavElement = sideNav.contains(event.target);
+            var isClickInsideNavMenu = navMenu.contains(event.target);
+            if (!isClickSideNavElement) {
+                if (isClickInsideNavMenu) {
+                    if (sideNav.innerHTML === ``) {
+                        sideNav.innerHTML = `<div id="logo">
+            <img src="./linnex-college-utawala.jpg">
+        </div>
+        <nav id="side-nav-nav">
+            <p id="nav-home" class="nav-link"><a href="/homeportal" class="nav-link-btn">Home</a></p>
+            <p id="nav-Ebook" class="nav-link"><a href="#" class="nav-link-btn">Ebook</a></p>
+            <p id="nav-Fees" class="nav-link"><a href="#" class="nav-link-btn">Check Fees</a></p>
+            <p id="nav-profile" class="nav-link"><a href="#" class="nav-link-btn">Change Profile</a></p>
+            <p id="nav-profile" class="nav-link"><a href="/changepassword" class="nav-link-btn">Change Password</a></p>
+
+        </nav>`
+                    }
+                    else {
+                        sideNav.innerHTML = ``
+                    }
+                }
+                else {
+                    sideNav.innerHTML = ``
+                }
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

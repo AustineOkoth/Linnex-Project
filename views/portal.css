@@ -1,0 +1,80 @@
+#top-nav-icon {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    margin-top: -7px;
+}
+body{
+   /* background-image: url(./graduate-image2.jpg); */
+   background-color:white;
+}
+
+#side-nav {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    height: 80%;
+    position: absolute;
+    margin-top: 5px;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-link {
+    text-align: left;
+    padding: 15px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    padding-top: 10px;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+
+
+#nav-menu-link {
+    background-color: yellow;
+
+}
+
+#nav-menu-bar {
+    text-align: left;
+    padding: 10px;
+}
+
+.nav-link-btn {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-btn :hover {
+    color: yellow;
+}
+
+.changeSize,
+.imgChangeSize {
+    position: absolute;
+    visibility: hidden;
+}
+
+#nav-menu-bar-change {
+    text-align: left;
+}
+
+#personal-info {
+    padding-left: 20px;
+    width: 77%;
+    margin:auto;
+    background-color: whitesmoke;
+
+}
+
+h4,
+h2 {
+    text-align: center;
+}
+
+#side-nav-personal-info {
+    display: flex;
+}

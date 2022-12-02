@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./linnex-college-utawala.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index2.css">
+    <title>Linnex Registration Page</title>
+</head>
+
+
+<style>
+    #register-container {
+        background-color: rgba(255, 255, 255, 0.425);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+    }
+
+    [type="email"],
+    [type="number"],
+    [type="text"] {
+        padding-left: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 14px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+
+    input {
+        margin-left: 30px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        height: 25px;
+        padding-top: 5px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #submit-btn-div{
+        text-align: center;
+
+    }
+    #submit-btn{
+        background-color:rgba(255, 255, 0, 0.733);
+        border-radius: 10px;
+        border: 0px;
+        padding: 15px;
+        
+    }
+
+ 
+    #logo {
+        display: flex;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<body>
+    <div id="top-nav"></div>
+
+    <div id="register-container">
+        <div id="logo">
+            <img src="./linnex-college-utawala.jpg" style="width: 80px; height: 80px; border-radius: 100%;">
+            <h4 id="register-header" style="text-align:justify; padding-left: 10px;  padding-right: 10px;  color: rgba(0, 68, 255, 0.836);">
+                Linnex Training Institute</h4>
+        </div>
+
+        <div id="register-form-container">
+
+            <form id="register-form" method="post" action="/register" autocomplete="on"><br>
+                <input type="text" id="name" name="fullName" placeholder="Enter Full Name" required><br><br>
+                <input type="number" id="phonenumber" name="phoneNumber" placeholder="Phone Number" required><br><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                <input type="text" id="register-course" name="courses" placeholder="Course to Enroll" required><br><br>
+                <input id="termsAndConditions" type="checkbox" name="termsAndConditions" style="margin-top: -5px;"
+                    required>
+                <label for="termsAndConditions" style="color: black; font-size: smaller;">I agree to the <a
+                        href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/"
+                        style="text-decoration: none; font-weight: bold; color: rgb(13, 90, 255); padding-right: 5px;">terms
+                        and conditions</a>
+                </label><br>
+
+                <p id="have-account" style="font-size: small; text-align: center;">Have an account already? <a href="/login" id="login-btn"
+                    style="color: rgb(13, 90, 255);margin-right: 10px;">Login</a>
+                 </p>
+
+                <div id="submit-btn-div" style="margin-bottom: 20px;">
+                    <button id="submit-btn">SUBMIT</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- <div id="footer">
+    </div> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
